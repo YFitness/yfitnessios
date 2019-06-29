@@ -1,0 +1,42 @@
+import React from 'react';
+import { View, Image, StyleSheet, AsyncStorage } from 'react-native';
+import { Fonts } from '../Fonts/insex';
+import Button from '../Component/Button';
+class UserOrGym extends React.Component {
+    static navigationOptions = {
+        headerTransparent: true,
+        headerTintColor: '#fcb72b'
+    }
+    render() {
+        return (
+            <View style={styles.Conatiner}  >
+                <Image
+                    resizeMode='stretch'
+                    style={{ alignSelf: 'center', height: 400, width: 400 }}
+                    source={require('../Photo/Logo.png')}
+                />
+                <View style={{ flexDirection: 'row', justifyContent: 'space-around' }} >
+                    <Button
+                        onPress={() => { this.props.navigation.navigate('Welcome') }}
+                        style={styles.Button}
+                        textStyle={styles.ButtonText}
+                        Text='Player'
+                    />
+                    <Button
+                        onPress={() => { this.props.navigation.navigate('WelcomeGym') }}
+                        style={styles.Button}
+                        Text='Gym'
+                        textStyle={styles.ButtonText}
+                    />
+                </View>
+            </View>
+        )
+    }
+}
+const styles = StyleSheet.create({
+    Button: { backgroundColor: '#1a1a1a', borderRadius: 20, padding: 20, width: '30%', alignItems: 'center' },
+    ButtonText: { fontSize: 20, color: '#fcb72b', alignSelf: 'center', fontFamily: Fonts.Helvetica, textAlign: 'center' },
+    Conatiner: { backgroundColor: 'black', flex: 1, justifyContent: 'center' }
+
+})
+export default UserOrGym;
