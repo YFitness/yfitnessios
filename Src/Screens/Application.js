@@ -22,7 +22,7 @@ const setToken = async (Token) => {
             return false
         })
 }
-const HowIsMe = async (token) => {
+const HowIsMe = async (token, noConnetction) => {
     return Axios.get(`${MainUrl}/Api/Gyms/me`, { headers: { Authorization: token } })
         .then((value) => {
             if (value.data.Age && value.data.Email !== 'yfitness@yfitness.com') {
@@ -33,7 +33,7 @@ const HowIsMe = async (token) => {
             else { return 'Gym' }
         })
         .catch(() => {
-            console.log('Erorr In Request')
+            noConnetction()
         })
 }
 export {

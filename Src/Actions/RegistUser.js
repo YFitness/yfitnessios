@@ -35,12 +35,14 @@ export const RegistUser = (Data) => {
     return (dispatch) => {
         const { Name, Password, Email, ConfimPassword, Mobile, Age } = Data
         if (Validate(Data)) {
+            // alert('then')
             dispatch({ type: 'Regist', payload: true })
             return Axios.post(`${MainUrl}/Api/Users/regist`, { Name, Email, Password, ConfimPassword, Mobile, Age })
                 .then((Value) => {
                     dispatch({ type: 'RegistUserSuc', payload: Value.data.token })
                 })
                 .catch((e) => {
+            // alert('catch')
                     if (e.response) {
                         dispatch({ type: 'RegistUserNotSuc', payload: e.response.data.Erorr })
                     } else { dispatch({ type: 'RegistUserFail', payload: e.message }) }

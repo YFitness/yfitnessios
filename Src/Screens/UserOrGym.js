@@ -25,7 +25,7 @@ class UserOrGym extends React.Component {
                     <Button
                         onPress={() => { this.props.navigation.navigate('WelcomeGym') }}
                         style={styles.Button}
-                        Text='Gym'
+                        Text='Trainer'
                         textStyle={styles.ButtonText}
                     />
                 </View>

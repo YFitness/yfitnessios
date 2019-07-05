@@ -100,11 +100,11 @@ const styles = StyleSheet.create({
         color: '#fcb72b', fontSize: 15, alignSelf: 'center', marginVertical: 10
     },
     Button: {
-        backgroundColor: '#000000', padding: 5, marginHorizontal: 30, marginTop: 10, alignSelf: 'center',
+        backgroundColor: '#fcb72b', padding: 5, marginHorizontal: 30, marginTop: 10, alignSelf: 'center',
         width: 250
     },
     ButtonText: {
-        color: 'white', alignSelf: 'center', fontSize: 15
+        color: 'black', alignSelf: 'center', fontSize: 15
     },
     containerOf: {
         backgroundColor: '#1a1a1a', padding: 5, borderRadius: 20
