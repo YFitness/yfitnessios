@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlatList, Image, Text, View, StyleSheet } from 'react-native'
-import MapVeiw, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+import MapVeiw, { Marker, PROVIDER_GOOGLE, PROVIDER_DEFAULT } from 'react-native-maps';
 
 class MapComponent extends React.Component {
     render() {
@@ -9,7 +9,7 @@ class MapComponent extends React.Component {
                 customMapStyle={this.props.mapStyle}
                 initialRegion={this.props.Init_region}
                 region={this.props.region}
-                provider={PROVIDER_GOOGLE}
+                provider={PROVIDER_DEFAULT}
             >
                 <FlatList
                     data={this.props.AllGyms}
