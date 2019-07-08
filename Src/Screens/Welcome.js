@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Dimensions, StyleSheet } from 'react-native';
-import {Fonts} from '../Fonts/insex';
+// import {Fonts} from '../Fonts/insex';
 import Button from '../Component/Button';
 class Welcome extends React.Component {
     static navigationOptions = {

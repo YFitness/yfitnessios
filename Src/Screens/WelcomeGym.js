@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, ImageBackground, Dimensions, StyleSheet } from 'react-native';
 import backround from '../Photo/backround.png';
-import {Fonts} from '../Fonts/insex';
+// import {Fonts} from '../Fonts/insex';
 import Button from '../Component/Button';
 class Welcome extends React.Component {
     static navigationOptions = {
