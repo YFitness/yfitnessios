@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image, TextInput, StyleSheet } from 'react-native';
-import { Fonts } from '../Fonts/insex';
+         
 
 const textInput = (props) => (
     <View style={styles.Container} >

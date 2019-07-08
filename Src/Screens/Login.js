@@ -2,7 +2,7 @@ import React from 'react';
 import { View, ActivityIndicator, AsyncStorage, StyleSheet, Keyboard } from 'react-native';
 import Button from '../Component/Button';
 import { connect } from 'react-redux';
-import { Fonts } from '../Fonts/insex';
+         
 import Input from '../Component/TextInput';
 import Toast, { DURATION } from 'react-native-easy-toast'
 import { Email, Password, LoginUser, Validate } from '../Actions/LoginUsers';
@@ -79,7 +79,7 @@ class Login extends React.Component {
                     />
                     {this.props.Login.Loading == true ? <ActivityIndicator size='large' color='#fcb72b' style={{ marginTop: 10 }} /> : <View />}
                     <Button
-                        textStyle={{ alignSelf: 'center', color: '#fcb72b', fontFamily: Fonts.Helvetica, fontSize: 20 }}
+                        textStyle={{ alignSelf: 'center', color: '#fcb72b',          fontSize: 20 }}
                         style={styles.Button}
                         Text='Login'
                         onPress={() => { this.onLogin() }}
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#fcb72b',
         borderBottomWidth: 0.2,
         fontSize: 20,
-        fontFamily: Fonts.Helvetica,
+                
         width: '100%',
         color: '#fcb72b'
     },

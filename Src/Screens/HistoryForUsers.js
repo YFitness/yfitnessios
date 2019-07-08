@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, AsyncStorage, ScrollView, RefreshControl } from
 import HistoryList from '../Component/HistoryList';
 import { AllRequsetss } from '../Actions/RequestForUsers';
 import { connect } from 'react-redux';
-import { Fonts } from '../Fonts/insex';
+         
 import Button from '../Component/Button';
 class HistoryForUsers extends React.Component {
     constructor(props) {
@@ -60,7 +60,7 @@ const Styles = StyleSheet.create({
         flex: 1, justifyContent: 'center'
     },
     Text: {
-        color: '#fcb72b', alignSelf: 'center', fontSize: 20, fontFamily: Fonts.Helvetica
+        color: '#fcb72b', alignSelf: 'center', fontSize: 20,          
     }
 })
 const mApsateToProps = state => {

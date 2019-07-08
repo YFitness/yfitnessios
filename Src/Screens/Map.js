@@ -254,7 +254,7 @@ class Map extends React.Component {
                     
                     }
                         mapStyle={Sty}
-                    />
+                    /> 
                 </View>
             )
         }

@@ -7,7 +7,7 @@ import { SendPoints, TransPoints, UserNumber } from '../Actions/TransPointsFromG
 import { Me } from '../Actions/GymInfo';
 import Toast from 'react-native-easy-toast';
 import Input from '../Component/TextInput';
-import { Fonts } from '../Fonts/insex';
+         
 import UserProfile from '../Component/UserProfile';
 class UserDetails extends React.Component {
     static navigationOptions = {
@@ -67,7 +67,7 @@ class UserDetails extends React.Component {
                 {this.state.show == true ?
                     <BTN
                         style={styles.Button}
-                        textStyle={{ fontSize: 20, color: '#fcb72b', alignSelf: 'center', fontFamily: Fonts.Helvetica }}
+                        textStyle={{ fontSize: 20, color: '#fcb72b', alignSelf: 'center',           }}
                         Text='Charge'
                         onPress={() => { this.setState({ show: false }, () => { this.onSendPoints() }) }}
                     /> : <View />}
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#fcb72b',
         borderBottomWidth: 0.2,
         fontSize: 20,
-        fontFamily: Fonts.Helvetica,
+                
         width: '100%',
         color: '#fcb72b',
         marginVertical: 10

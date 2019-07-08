@@ -4,7 +4,7 @@ import Button from '../Component/Button';
 import { Email, Name, Password, ConfirmPassword } from '../Actions/RegistGyms';
 import { connect } from 'react-redux';
 import unlocked from '../Photo/unlocked.png';
-import { Fonts } from '../Fonts/insex';
+         
 import Input from '../Component/TextInput';
 import User from '../Photo/user.png';
 class RegistGyms extends React.Component {
@@ -66,7 +66,7 @@ class RegistGyms extends React.Component {
          borderBottomColor: '#fcb72b',
          borderBottomWidth: 0.2,
          fontSize: 20,
-         fontFamily: Fonts.Helvetica,
+                 
          width: '100%',
          color: '#fcb72b',
          marginVertical: 10

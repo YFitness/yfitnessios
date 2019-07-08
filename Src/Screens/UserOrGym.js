@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image, StyleSheet, AsyncStorage } from 'react-native';
-import { Fonts } from '../Fonts/insex';
+         
 import Button from '../Component/Button';
 class UserOrGym extends React.Component {
     static navigationOptions = {
@@ -35,7 +35,7 @@ class UserOrGym extends React.Component {
 }
 const styles = StyleSheet.create({
     Button: { backgroundColor: '#1a1a1a', borderRadius: 20, padding: 20, width: '30%', alignItems: 'center' },
-    ButtonText: { fontSize: 20, color: '#fcb72b', alignSelf: 'center', fontFamily: Fonts.Helvetica, textAlign: 'center' },
+    ButtonText: { fontSize: 20, color: '#fcb72b', alignSelf: 'center',          textAlign: 'center' },
     Conatiner: { backgroundColor: 'black', flex: 1, justifyContent: 'center' }
 
 })

@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     },
         Button: {backgroundColor: '#1a1a1a', borderRadius: 20, padding: 20, alignItems: 'center'
     },
-    ButtonText: { fontSize: 20, color: '#fcb72b', alignSelf: 'center', fontFamily: Fonts.Helvetica, textAlign: 'center' },
+    ButtonText: { fontSize: 20, color: '#fcb72b', alignSelf: 'center',          textAlign: 'center' },
 })
 
 export default Welcome

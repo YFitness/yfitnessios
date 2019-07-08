@@ -4,6 +4,9 @@ import MapVeiw, { Marker, PROVIDER_GOOGLE, PROVIDER_DEFAULT } from 'react-native
 
 class MapComponent extends React.Component {
     render() {
+        if (this.props.AllGyms.length == 0) {
+            return null
+        }
         return (
             <MapVeiw style={{ flex: 1 }}
                 customMapStyle={this.props.mapStyle}
@@ -11,7 +14,34 @@ class MapComponent extends React.Component {
                 region={this.props.region}
                 provider={PROVIDER_DEFAULT}
             >
-                <FlatList
+                {/* <MapVeiw.Marker 
+                // key={index}
+                        coordinate={this.props.Init_region}
+                        // onPress={() => { this.props.onMarkerPress(item) }}
+                    >
+                        <Text style={Styles.Text}> {'Name'} </Text>
+                        <Image
+                            source={require('../Photo/Logo.png')}
+                            style={Styles.Image}
+                        />
+                    </MapVeiw.Marker> */}
+
+             {this.props.AllGyms.map((item, index) => (
+                    <MapVeiw.Marker key={index}
+                        coordinate={item.Adress}
+                        onPress={() => { this.props.onMarkerPress(item) }}
+                    >
+                        <Text style={Styles.Text}> {item.Name} </Text>
+                        <Image
+                            source={  require('../Photo/Logo.png') }
+                            style={Styles.Image}
+                        />
+                    </MapVeiw.Marker>
+             )
+                )}
+
+                 
+                {/* { <FlatList
                     data={this.props.AllGyms}
                     keyExtractor={(item, index) => index.toString()}
                     renderItem={({ item, index }) => {
@@ -23,13 +53,14 @@ class MapComponent extends React.Component {
                                 <Text style={Styles.Text}> {item.Name} </Text>
                                 <Image
                                     source={require('../Photo/Logo.png')}
-                                    style={Styles.Image}
-                                />
+                                   style={Styles.Image}
+                                 /> 
                             </Marker>
                         )
                     }}
-                />
-                {this.props.me ?
+                />   */}
+
+                 {this.props.me ?
                     <MapVeiw.Marker coordinate={this.props.me} >
                         <View style={Styles.Redious} >
                             <View style={Styles.marker} />
@@ -37,7 +68,7 @@ class MapComponent extends React.Component {
                     </MapVeiw.Marker>
                     :
                     <View />
-                }                
+                }                 
             </MapVeiw>
         )
     }

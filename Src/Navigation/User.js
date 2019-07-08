@@ -11,7 +11,9 @@ import ChangeUserPassword from '../Screens/ChangePassword';
 import HistoryForUsers from '../Screens/HistoryForUsers';
 import YFitnessPage from '../Screens/YfitnessPage';
 import GymDetails from '../Screens/GymDetails';
-const MapStack = createStackNavigator({ Maps, GymDetails },{headerTransparent: true, headerMode: 'none'})
+const MapStack = createStackNavigator({ Maps, 
+     GymDetails 
+},{headerTransparent: true, headerMode: 'none'})
 const ProfileStack = createStackNavigator({ Profile, YFitnessPage, ChangeUserPassword },{headerTransparent: true, headerMode: 'none'})
 const UserApp = createBottomTabNavigator({
     Map: {
@@ -19,9 +21,9 @@ const UserApp = createBottomTabNavigator({
         navigationOptions: {
             tabBarIcon: <Image source={MapImage} style={{ width: 25, height: 25 }} />,
             headerMode: 'none'
-        },
-        
-    }, Profile: {
+        } 
+    },
+    Profile: {
         screen: ProfileStack,
         navigationOptions: {
             tabBarIcon: <Image source={Noti} style={{ width: 25, height: 25 }} />
@@ -32,6 +34,7 @@ const UserApp = createBottomTabNavigator({
         navigationOptions: {
             tabBarIcon: <Image source={Hist} style={{ width: 25, height: 25 }} />
         }
-    }
+    },
+   
 })
 export default createAppContainer(UserApp)

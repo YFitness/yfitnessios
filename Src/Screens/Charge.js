@@ -3,7 +3,7 @@ import { View, Keyboard, StyleSheet, AsyncStorage, ActivityIndicator, ImageBackg
 import BTN from '../Component/Button';
 import Toast from 'react-native-easy-toast';
 import Input from '../Component/TextInput';
-import { Fonts } from '../Fonts/insex';
+         
 import Axios from 'axios';
 class Charge extends React.Component {
     static navigationOptions = {
@@ -54,7 +54,7 @@ class Charge extends React.Component {
                 />
                 <BTN
                     style={styles.Button}
-                    textStyle={{ fontSize: 20, color: '#fcb72b', alignSelf: 'center', fontFamily: Fonts.Helvetica }}
+                    textStyle={{ fontSize: 20, color: '#fcb72b', alignSelf: 'center',           }}
                     Text='Get Details'
                     onPress={() => { this.getUserDteails() }}
                 />
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#fcb72b',
         borderBottomWidth: 0.2,
         fontSize: 20,
-        fontFamily: Fonts.Helvetica,
+                
         width: '100%',
         color: '#fcb72b',
         marginVertical: 10

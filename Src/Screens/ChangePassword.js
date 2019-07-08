@@ -3,7 +3,7 @@ import { View, StyleSheet, ActivityIndicator, Keyboard } from 'react-native';
 import { connect } from 'react-redux';
 import Input from '../Component/TextInput';
 import Toast from 'react-native-easy-toast';
-import { Fonts } from '../Fonts/insex';
+         
 import Button from '../Component/Button';
 import { OldPassword, NewPassword, ResetPassword } from '../Actions/ResetUserPassword';
 import { Me } from '../Actions/MyInfo';
@@ -48,7 +48,7 @@ class ChangePassword extends React.Component {
                     />
                     {this.props.ResetUserPassword.Resiting == true ? <ActivityIndicator size='large' color='#fcb72b' style={{ marginTop: 10 }} /> : <View />}
                     <Button
-                        textStyle={{ alignSelf: 'center', color: '#fcb72b', fontFamily: Fonts.Helvetica, fontSize: 20 }}
+                        textStyle={{ alignSelf: 'center', color: '#fcb72b',          fontSize: 20 }}
                         style={styles.Button}
                         Text='Reset My Password'
                         onPress={() => { this.onReset() }}
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#fcb72b',
         borderBottomWidth: 0.2,
         fontSize: 20,
-        fontFamily: Fonts.Helvetica,
+                
         width: '100%',
         color: '#fcb72b'
     },

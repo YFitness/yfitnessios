@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { Fonts } from '../Fonts/insex';
+         
 const History = (props) => (
     <View style={Styles.container} >
         <Text style={Styles.Text} >
@@ -25,7 +25,7 @@ const Styles = StyleSheet.create({
         backgroundColor: '#333333', borderRadius: 20, borderWidth: 1, padding: 15, marginHorizontal: 30, marginTop: 10
     },
     Text: {
-        color: '#fcb72b', alignSelf: 'center', fontSize: 15, fontFamily: Fonts.Helvetica,
+        color: '#fcb72b', alignSelf: 'center', fontSize: 15,         
          marginTop: 5, paddingVertical: 5
     }
 })

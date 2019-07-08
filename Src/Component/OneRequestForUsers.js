@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import Button from './Button'
-import { Fonts } from '../Fonts/insex';
+         
 const OneRequest = (props) => {
     if (props.loading== true) { return <ActivityIndicator size='large' color='#fcb72b' /> } else {
         return (
@@ -49,9 +49,9 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#1a1a1a', borderColor: '#333333', borderWidth: 1 , padding: 10 , margin: 10 , marginTop : 20
     },
-    text: { color: '#fcb72b', fontSize: 15, alignSelf: 'center', marginTop: 5, fontFamily: Fonts.Helvetica, textAlignVertical: 'center', textAlign: 'center' }
+    text: { color: '#fcb72b', fontSize: 15, alignSelf: 'center', marginTop: 5,          textAlignVertical: 'center', textAlign: 'center' }
     , NumberTxt: {
-        color: '#fcb72b', alignSelf: 'center', fontSize: 15, fontFamily: Fonts.Helvetica, padding: 5
+        color: '#fcb72b', alignSelf: 'center', fontSize: 15,          padding: 5
     }
 })
 

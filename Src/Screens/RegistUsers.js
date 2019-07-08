@@ -4,7 +4,7 @@ import Button from '../Component/Button';
 import { connect } from 'react-redux';
 import user from '../Photo/user.png';
 import unlocked from '../Photo/unlocked.png';
-import { Fonts } from '../Fonts/insex';
+         
 import Input from '../Component/TextInput';
 import { Name, ConfirmPassword, Password, Email } from '../Actions/RegistUser';
 class RegistUsers extends React.Component {
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#fcb72b',
         borderBottomWidth: 0.2,
         fontSize: 20,
-        fontFamily: Fonts.Helvetica,
+                
         width: '100%',
         color: '#fcb72b',
         marginVertical: 10

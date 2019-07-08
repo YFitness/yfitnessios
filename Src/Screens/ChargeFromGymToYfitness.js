@@ -7,7 +7,7 @@ import { TransPoints, GymNumber, SendPointsToYFitness } from '../Actions/TransPo
 import { Me } from '../Actions/GymInfo';
 import Toast from 'react-native-easy-toast';
 import Input from '../Component/TextInput';
-import { Fonts } from '../Fonts/insex';
+         
 class GymChargeToAdmin extends React.Component {
     static navigationOptions = {
         headerTransparent: true,
@@ -64,7 +64,7 @@ class GymChargeToAdmin extends React.Component {
                 {this.props.Sendding.Loading == true ? <ActivityIndicator size='large' color='#fcb72b' /> : <View />}
                 <BTN
                     style={styles.Button}
-                    textStyle={{ fontSize: 20, color: '#fcb72b', alignSelf: 'center', fontFamily: Fonts.Helvetica }}
+                    textStyle={{ fontSize: 20, color: '#fcb72b', alignSelf: 'center',           }}
                     Text='Repalce'
                     onPress={() => { this.onSendPoints() }}
                 />
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#fcb72b',
         borderBottomWidth: 0.2,
         fontSize: 20,
-        fontFamily: Fonts.Helvetica,
+                
         width: '100%',
         color: '#fcb72b',
         marginVertical: 10

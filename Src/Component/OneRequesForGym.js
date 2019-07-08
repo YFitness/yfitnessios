@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import Button from './Button'
-import { Fonts } from '../Fonts/insex';
+         
 class OneRequest extends React.Component {
     state = {
         Show: false
@@ -25,13 +25,13 @@ class OneRequest extends React.Component {
                 <View style={{ flexDirection: 'row', justifyContent: 'space-around' }} >
                     <Button
                         style={Styles.Button}
-                        textStyle={{ color: '#fcb72b', alignSelf: 'center', fontSize: 20, fontFamily: Fonts.Helvetica }}
+                        textStyle={{ color: '#fcb72b', alignSelf: 'center', fontSize: 20,           }}
                         Text='Decline'
                         onPress={this.props.onDecilne}
                     />
                     <Button
                         style={Styles.Button}
-                        textStyle={{ color: '#fcb72b', alignSelf: 'center', fontSize: 20, fontFamily: Fonts.Helvetica }}
+                        textStyle={{ color: '#fcb72b', alignSelf: 'center', fontSize: 20,           }}
                         Text='Accept'
                         onPress={this.props.onAccept}
                     />
@@ -49,7 +49,7 @@ const Styles = StyleSheet.create({
         backgroundColor: '#333333', borderRadius: 20, padding: 15, marginHorizontal: 30, marginTop: 10
     },
     Text: {
-        alignSelf: 'center', color: '#fcb72b', fontSize: 20, fontFamily: Fonts.Helvetica, width: '90%', textAlign: 'center'
+        alignSelf: 'center', color: '#fcb72b', fontSize: 20,          width: '90%', textAlign: 'center'
     }
 })
 export default OneRequest

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ActivityIndicator, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, ActivityIndicator, StyleSheet,ScrollView } from 'react-native';
 import Button from '../Component/Button';
 import { Requet, RequetCardio } from '../Actions/AddRequests';
 import { connect } from 'react-redux';
@@ -23,7 +23,10 @@ class GymDetails extends React.Component {
                 <Text style={styles.Text}>
                     {Name}
                 </Text>
-                <ScrollView style={styles.containerOf} >
+                <ScrollView 
+                // contentContainerStyle={styles.containerOf}
+                 style={styles.containerOf}
+                 >
                     <View>
                     </View>
                     {this.props.add.Loading == true ?

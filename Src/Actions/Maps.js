@@ -1,4 +1,4 @@
-import { PermissionsAndroid } from 'react-native';
+import { PermissionsAndroid, Platform } from 'react-native';
 export const MyPlace = (ScreenWidth, ScreenHeight) => {
     return (dispatch) => {
         navigator.geolocation.getCurrentPosition((pos) => {
@@ -27,6 +27,7 @@ export const MyPlace = (ScreenWidth, ScreenHeight) => {
 
 export const GetOrCheckForPermisions = () => {
     return (dispatch) => {
+        if(Platform.OS == 'android')
         PermissionsAndroid.check(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION)
             .then((ok) => {
                 if (!ok) {

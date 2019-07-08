@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { AllRequsets } from '../Actions/RequestForGyms';
 import { Me } from '../Actions/GymInfo';
 import { AcceptRequest, DeclineRequest } from '../Actions/AceeptOrDeclineRequest';
-import { Fonts } from '../Fonts/insex';
+         
 import { NavigationEvents } from 'react-navigation';
 import ModalLoading from '../Component/ModalLoading';
 class Requsest extends React.Component {
@@ -114,7 +114,7 @@ class Requsest extends React.Component {
     render() { return this.check() }
 }
 const Styles = StyleSheet.create({
-    Text: { color: '#fcb72b', alignSelf: 'center', fontSize: 20, fontFamily: Fonts.Helvetica, marginTop: 30 }
+    Text: { color: '#fcb72b', alignSelf: 'center', fontSize: 20,          marginTop: 30 }
 })
 const mapStateToProps = state => {
     return {

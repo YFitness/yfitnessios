@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Keyboard, ActivityIndicator, StyleSheet, AsyncStorage } from 'react-native';
 import Button from '../Component/Button';
 import { connect } from 'react-redux';
-import { Fonts } from '../Fonts/insex';
+         
 import Toast, { DURATION } from 'react-native-easy-toast'
 import Input from '../Component/TextInput';
 import User from '../Photo/user.png';
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#fcb72b',
         borderBottomWidth: 0.2,
         fontSize: 20,
-        fontFamily: Fonts.Helvetica,
+                
         width: '100%',
         color: '#fcb72b',
         marginVertical: 10

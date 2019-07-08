@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, AsyncStorage, Dimensions } from 'react-native';
 import Button from '../Component/Button';
 import { Me } from '../Actions/GymInfo';
 import { connect } from 'react-redux';
-import { Fonts } from '../Fonts/insex';
+         
 import { getToken } from '../Screens/Application';
 import { NavigationEvents } from 'react-navigation';
 class GymProfile extends React.Component {
@@ -20,7 +20,7 @@ class GymProfile extends React.Component {
         return (
             <View style={Styles.Container} >
                 <NavigationEvents onDidFocus={() => { this._getData(); }} />
-                <Text style={{ color: '#fcb72b', fontSize: 25, alignSelf: 'center', marginTop: 5, fontFamily: Fonts.Helvetica }} >
+                <Text style={{ color: '#fcb72b', fontSize: 25, alignSelf: 'center', marginTop: 5,           }} >
                     {this.props.Info.Name || 'Un Named'}
                 </Text>
                 <View style={{ flexDirection: 'row',justifyContent: 'space-between', marginTop: 5, marginHorizontal: 10 }} >
@@ -31,13 +31,13 @@ class GymProfile extends React.Component {
                          {`ID : ${this.props.Info.Number || 0}`} 
                     </Text>
                 </View>
-                <Text style={{ color: '#fcb72b', fontSize: 20, alignSelf: 'center', marginTop: 5, fontFamily: Fonts.Helvetica }}>
+                <Text style={{ color: '#fcb72b', fontSize: 20, alignSelf: 'center', marginTop: 5,           }}>
                     {this.props.Info.Email || 'No Email'}
                 </Text>
                 <Button
                     style={Styles.Button}
                     Text='Charge For Players'
-                    textStyle={{ alignSelf: 'center', color: '#fcb72b', fontSize: 20, fontFamily: Fonts.Helvetica }}
+                    textStyle={{ alignSelf: 'center', color: '#fcb72b', fontSize: 20,           }}
                     onPress={this.props.onPress}
                 />
             </View>

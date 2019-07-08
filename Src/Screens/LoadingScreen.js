@@ -3,7 +3,7 @@ import { Image, View, ActivityIndicator } from 'react-native';
 import backround from '../Photo/Logo.png';
 import { getToken, HowIsMe } from '../Screens/Application';
 import Button from '../Component/Button';
-import { Fonts } from '../Fonts/insex';
+         
 class Loading extends React.Component {
     state = {
         Loading: false
@@ -43,7 +43,7 @@ class Loading extends React.Component {
                     <ActivityIndicator size='large' color='#fcb72b' /> :
                     <Button 
                     Text='ReTry' 
-                    textStyle={{ alignSelf: 'center', color: 'black', fontFamily: Fonts.Helvetica, fontSize: 20 }}
+                    textStyle={{ alignSelf: 'center', color: 'black',          fontSize: 20 }}
                         style={{ backgroundColor: '#fcb72b', padding: 10, marginTop: 40 }}
                     onPress={() => {
                         this.Init()
