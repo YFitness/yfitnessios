@@ -12,7 +12,7 @@ class ChargeForGym extends React.Component {
     onCharge() {
         const { gymNumber, Count } = this.state
         if (gymNumber == '' || gymNumber <= 0 || Count == '' || Count <= 0) {
-            alert('حط الداتا صح يا عرص  ')
+            alert('data not correct   ')
             return
         }
         this.setState({ charging: true }, () => {
@@ -24,8 +24,8 @@ class ChargeForGym extends React.Component {
                 this.setState({ charging: false })
                 alert(v.data)
             }).catch((e) => {
+                this.setState({ charging: false })
                 if (e.response) {
-                    this.setState({ charging: false })
                     alert(e.response.data)
                 } else { alert(e.message) }
             })

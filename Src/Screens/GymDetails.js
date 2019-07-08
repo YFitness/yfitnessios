@@ -46,6 +46,7 @@ class GymDetails extends React.Component {
                                                 this.props.navigation.navigate('Profile')
                                             } else {
                                                 alert(this.props.add.Fail)
+                                                this.props.navigation.navigate('Profile')
                                             }
                                         }).catch(() => { alert(this.props.add.Fail) })
                                     }
@@ -73,6 +74,7 @@ class GymDetails extends React.Component {
                                                 this.props.navigation.navigate('Profile')
                                             } else {
                                                 alert(this.props.addC.FailC)
+                                                this.props.navigation.navigate('Profile')
                                             }
                                         }).catch(() => { alert(this.props.addC.FailC) })
                                     }

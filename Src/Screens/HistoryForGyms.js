@@ -16,9 +16,11 @@ class HistoryForGyms extends React.Component {
         Refresh : false
     }
     handelOnRefresh = () => {
-        this.setState({ Refresh: true },()=>{
-            this.props.Me(token).then(() => { this.props.AllRequsetss(this.props.Info._id) })
-        })
+        this.setState({ Refresh: true },()=>
+        //{
+         //   this.props.Me(token).then(() => 
+            { this.props.AllRequsetss(this.props.Info._id) })
+      //  })
         this.setState({ Refresh: false })  
     }
     _laodData = () => {
