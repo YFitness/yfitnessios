@@ -3,7 +3,8 @@ import { View, Keyboard, StyleSheet, AsyncStorage, ActivityIndicator, ImageBackg
 import BTN from '../Component/Button';
 import Toast from 'react-native-easy-toast';
 import Input from '../Component/TextInput';
-         
+import { MainUrl } from '../Root';
+	
 import Axios from 'axios';
 class Charge extends React.Component {
     static navigationOptions = {
@@ -17,8 +18,9 @@ class Charge extends React.Component {
         if (Id == 0) {
             return this.refs.tost.show(' No Player With This Id  ')
         }
-        Axios.post('https://yfitness.herokuapp.com/Api/Users/userdetailsbynumber', { userNumber: Id })
-            .then((v) => {
+     //   Axios.post('https://yfitness.herokuapp.com/Api/Users/userdetailsbynumber', { userNumber: Id })
+        Axios.post(`${MainUrl}/Api/Users/userdetailsbynumber`, { userNumber: Id })
+        .then((v) => {
                 if (v.data) {
                     const { Name, Email, Mobile, Number } = v.data
                      this.props.navigation.navigate('UserDetails', {

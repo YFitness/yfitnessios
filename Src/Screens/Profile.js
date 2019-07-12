@@ -35,6 +35,7 @@ class Profile extends React.Component {
     onrefresh = () => {
         this.setState({ refreshing: true }, () => {
             this.props.AllRequsets(this.props.MyInfo._id)
+            this.loadMyInfo()
             this.setState({ refreshing: false })
         })
     }
