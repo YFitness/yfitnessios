@@ -21,7 +21,7 @@ export const MyPlace = (ScreenWidth, ScreenHeight) => {
                 alert(`${e.message}`)
             }
 
-        }, { timeout: 60000, enableHighAccuracy: true })
+        }, { timeout: 6000000000, enableHighAccuracy: true })
     }
 }
 
